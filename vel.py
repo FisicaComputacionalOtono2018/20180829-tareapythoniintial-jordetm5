@@ -1,18 +1,19 @@
 #Jorge Dettle Meza Dominguez
 #29/08/2018
-#cv
-def f(x)
-    r=int(x)
-    x=x-int(x)
-    r=r+(x/60)
+#velocidad
+count=1
+stringinput = input("dame las distancias y los tiempos en el formato(m1,t1) use o,o para finalizar")
 
-def v(x):
-	return 1500/f(x)
+print(stringinput)
 
-a= []
-for i in range (0.0)
+stringinput = stringinput.replace(')(',' ').replace(')','').replace(',',' ') 
     
-    a.append(float(input("")))
-    i=i+1
-print(a)
-print([v(i) in a])
+print(stringinput) 
+
+for i in stringinput:
+     print(i)
+     if count%2!=0:
+         i=i/60
+     
+print(stringinput)
+
