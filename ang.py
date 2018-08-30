@@ -7,7 +7,7 @@ def magnitud(x) :
     p=0
     for i in range (0,3) :
         p=p+(x[i]**2)
-return math.sqrt(p)
+    return math.sqrt(p)
 
 
 def f(x) :
