@@ -1,3 +1,6 @@
+#Jorge Dettle Meza Dominguez
+#29/08/18
+#grafica de dos funciones
 import matplotlib.pyplot as plt
 import numpy as np
 def f1(x):
@@ -8,14 +11,14 @@ def f2(x):
 
 x =np.arange(-10, 15, 0.1)
 
-plt.plot(x, [f1(i) for i in x], "bo")
-plt.plot(x, [f2(i) for i in x], "go")
+plt.plot(x, [f1(i) for i in x], "bo", label="f1")
+plt.plot(x, [f2(i) for i in x], "go", label="f2")
 
 plt.axhline(0, color="black")
 plt.axvline(0, color="black")
+ 
 
-
-
+plt.legend(loc="upper right")
 plt.savefig("output.png")
 
 plt.show()
