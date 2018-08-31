@@ -43,7 +43,7 @@ m = []
 
 for i in range(0, len(b)):
     if b[i]!=' ':
-        if i==0:
+        if i==0 and b[i+1]==' ':
             m.append(int(b[i]))
 
         if i+1<len(b):
