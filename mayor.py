@@ -1,18 +1,24 @@
-#Jorge Dettle Meza Dominguez
+
+#jorge Dettle Meza Dominguez
 #29/08/2018
 #imprimir el mayor
 
-x=input("dame el primer numero")
-y=input("dame el segundo numero")
-z=input("dame el tercer numero")
-s=input("dame el cuarto numero")
 
-if x>y and x>z and x>s :
-	print(x)
-if y>x and y>z and y>s :
-	print(y)
-if z>y and z>x and z>s :
-	print(z)
-if s>y and s>z and s>x :
-	print(s)
+
+m=[]
+for i in range (0,4):
+	m.append(int(input("dame el numero: ")))
+
+for i in range(0, len(m)):
+	for i in range (0,len(m)):
+                
+		if i<len(m)-1:
+			if m[i]>m[i+1]:
+
+				e=m[i]
+				m[i]=m[i+1]
+				m[i+1]=e
+
+print(m[3])
+
 
