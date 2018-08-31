@@ -76,5 +76,5 @@ for i in range(0, len(n)):
 
 r=v(q)
 
-
-print("el promedio de la velocidad de los corredores es "promedio(r))
+print(r)
+print("el promedio de la velocidad de los corredores es ",promedio(r))
