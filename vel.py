@@ -31,12 +31,33 @@ stringinput = input("dame los tiempos en minutos y segundos en el formato(m1,s1)
 
 stringinput = stringinput.replace(')(',' ').replace(')','').replace(',',' ').replace('(','')
     
-m=[]
-for i in stringinput:
-    if i!=' ':
-        m.append(int(i))
+
             
-     
+b = []
+
+for i in stringinput:
+    b.append(i)
+
+
+m = []
+
+for i in range(0, len(b)):
+    if b[i]!=' ':
+        if i==0:
+            m.append(int(b[i]))
+
+        if i+1<len(b):
+            if b[i+1]!=' ':
+                m.append(int(b[i]+b[i+1]))
+               
+                i=i+1
+                
+            elif b[i-1]==' ':
+
+                m.append(int(b[i]))
+
+        if i+1==len(b) :
+            m.append(int(b[i]))     
 o=[]
 p=[]
 for i in m :
@@ -54,6 +75,6 @@ for i in range(0, len(n)):
 	q.append(n[i]+o[i])
 
 r=v(q)
-print(r)
 
-print(promedio(r))
+
+print("el promedio de la velocidad de los corredores es "promedio(r))
