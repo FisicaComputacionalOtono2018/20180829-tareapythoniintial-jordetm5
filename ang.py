@@ -21,5 +21,8 @@ a= []
 for i in range (0,3):
    a.append(int(input("dame el valor de la componente de A: ")))
 
-print(f(a))
+n=f(a)
 
+print("el angulo entre el vector y el eje x es ",n[0])
+print("el angulo entre el vector y el eje y es ",n[1])
+print("el angulo entre el vector y el eje z es ",n[2])
